@@ -70,7 +70,7 @@ const init = async () => {
                 return {
                     name: "price",
                     type: "number",
-                    message: "What is the price of the product?",
+                    message: `What is the price of the ${name}?`,
                     validate: input => isNaN(input) || input <= 0 ? `Please select a real number` : true
                 }
             },
